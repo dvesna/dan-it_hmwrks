@@ -1,6 +1,6 @@
 # dan-it_hmwrks
 here is some of my homeworks
-<nav class=navbar>
+
 <a href="https://dvesna.github.io/dan-it_hmwrks/homework3/index.html">Milan Holidays</a>
 
 <a href="https://dvesna.github.io/dan-it_hmwrks/homework4/index.html">registration page</a>
@@ -12,4 +12,4 @@ here is some of my homeworks
 <a href="https://dvesna.github.io/dan-it_hmwrks/homework6/index.html">Design architect</a>
 
 <a href="https://dvesna.github.io/dan-it_hmwrks/homework7/index.html">Star Wars</a>
-</nav>
+

@@ -1,0 +1,239 @@
+.pricing-plan * {
+    font-family: 'Arimo', sans-serif;
+}
+
+/*dark bold table border*/
+
+.pricing-plan {
+    margin: 0 auto;
+    border: 22px solid #3a4965;
+}
+
+/*sizes, spacings, colors of table cells and table rows*/
+
+thead td {
+    padding: auto;
+    font-size: 20px;
+    font-weight: 700;
+    height: 113px;
+}
+
+th, td {
+    box-sizing: border-box;
+    font-size: 16px;
+    border-collapse: collapse;
+    background-color: #dddddd;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.2);
+}
+
+th {
+    width: 198px;
+}
+
+td {
+    width: 157px;
+}
+
+tbody th {
+    padding: 18px 0;
+}
+
+tbody td {
+    padding: 22px 0;
+    line-height: 1.5;
+}
+
+/*lined-columns style*/
+
+tr td:nth-of-type(odd) {
+    background-color: #e3e3e3;
+}
+
+tr td:nth-of-type(even) {
+    background-color: #f2f2f2;
+}
+
+/*default classes for corporate background colors*/
+
+.bg-green {
+    background-color: #89c331;
+}
+
+.bg-coral {
+    background-color: #f04a56;
+}
+
+.bg-teal {
+    background-color: #20807c;
+}
+
+.bg-darkgray {
+    background-color: #484848;
+}
+
+/*main header corner table title*/
+
+.table-top-corner {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #fafafa;
+}
+
+.corner-title {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/*here is side titles of rows*/
+
+.head-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.head-subtitle {
+    margin-bottom: 22px;
+}
+
+/*price formatting*/
+
+.head-subtitle span {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+
+}
+
+.head-subtitle span:after {
+    content: 'Per Month';
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.head-subtitle sup {
+    font-weight: 700;
+    font-size: 16px;
+    vertical-align: super;
+}
+
+/*variable currency pseudo elements*/
+
+.currency-usd:before {
+    content: '$';
+}
+
+.currency-eur:before {
+    content: '€';
+}
+
+.currency-gbp:before {
+    content: '£';
+}
+
+/*default style for all buttons w/o background color*/
+
+.button {
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    width: 144px;
+    height: 41px;
+    padding: 13px 0;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    border-bottom: 7px;
+    transition: filter 0.2s ease-in-out;
+}
+
+.button:hover {
+    filter: brightness(0.8);
+}
+
+/*shadow line in button*/
+
+.button.bg-darkgray {
+    border-bottom: 7px solid #404040;
+}
+
+/*options of pricing plan */
+
+.storage-icon:before {
+    background: url("../img/icons.svg") no-repeat 0 5px;
+}
+
+.cloud-icon:before {
+    background: url("../img/icons.svg") no-repeat 0 -33px;
+}
+
+.email-icon:before {
+    background: url("../img/icons.svg") no-repeat 0 -73px;
+}
+
+.support-icon:before {
+    background: url("../img/icons.svg") no-repeat 0 -114px;
+}
+
+.box-icon:before {
+    background: url("../img/icons.svg") no-repeat 0 -153px;
+}
+
+.users-icon:before {
+    background: url("../img/icons.svg") no-repeat 0 -189px;
+}
+
+.option-title:before {
+    box-sizing: border-box;
+    content: '';
+    display: block;
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    margin: 0 auto 10px;
+}
+
+/*default content for all cells in tbody td*/
+
+.storage:after,
+.bandwidth:after,
+.emails:after,
+.support:after,
+.products:after,
+.user:after {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.storage:after {
+    content: 'storage';
+}
+
+.bandwidth:after {
+    content: 'bandwidth';
+}
+
+.emails:after {
+    content: 'emails';
+}
+
+.support:after {
+    content: 'support';
+}
+
+.products:after {
+    content: 'products';
+}
+
+.user:after {
+    content: 'user';
+}

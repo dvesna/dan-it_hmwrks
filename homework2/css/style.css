@@ -1,0 +1,144 @@
+* {
+    text-decoration: none;
+}
+
+.container {
+    font-family: sans-serif;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.main-logo {
+    margin: 61px 0 45px;
+}
+
+.main-logo a {
+    font-size: 74px;
+    color: black;
+}
+
+.blue-text {
+    color: #4bcaff;
+}
+
+.header-menu {
+    background-color: #35444f;
+    text-align: center;
+}
+
+.header-menu li {
+    padding: 24px 42px;
+    display: inline-block;
+    font-size: 22px;
+    margin: 0;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    border: 1px solid #35444f;
+    border-top: none;
+    border-bottom: none;
+
+}
+
+.header-menu .selected, .header-menu li:hover {
+    background-color: #222f3a;
+    border: 1px solid #818181;
+    border-top: none;
+    border-bottom: none;
+}
+
+.header-menu a {
+    color: white;
+}
+
+.content {
+    padding: 51px 0;
+}
+
+.left-side, .right-side {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.left-side {
+    width: 342px;
+}
+
+.side-menu li {
+    font-size: 25px;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.side-menu a {
+    color: #495863;
+    padding: 0 44px;
+}
+
+.side-menu .selected, .side-menu li:hover {
+    background-color: #dbdbdb;
+}
+
+.side-menu .selected a {
+    display: block;
+    margin-left: 25px;
+    color: black;
+}
+
+.right-side {
+    width: 885px;
+    margin-left: 48px;
+}
+
+.left-side, .right-side .content-image {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.content-image {
+    width: 885px;
+    height: 529px;
+    text-align: center;
+    padding: 74px 0;
+}
+
+.content-image img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.right-side p {
+    font-size: 16px;
+    margin: 30px 30px 0 30px;
+    line-height: 23px;
+}
+
+.bottom-menu {
+    background-color: #b4b7ba;
+    padding: 22px 44px;
+}
+
+.bottom-menu li {
+    display: inline-block;
+    font-size: 26px;
+    margin-right: 20px;
+}
+
+.bottom-menu .selected a{
+    text-decoration: underline;
+    color: #3181a6;
+}
+
+.bottom-menu a {
+    color: #0c1927;
+}
+
+.bottom-menu .last-menu-item {
+    margin-right: 0;
+}
+
+.copyright {
+    font-size: 23px;
+    text-align: right;
+    display: block;
+    margin-left: 194px;
+}

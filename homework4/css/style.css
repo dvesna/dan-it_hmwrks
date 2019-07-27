@@ -1,0 +1,333 @@
+body {
+    background: url("../img/background_main.png") no-repeat fixed;
+    background-size: cover;
+}
+
+.top-navbar {
+    min-width: 700px;
+    font-family: 'Verdana', sans-serif;
+    box-sizing: border-box;
+    position: sticky;
+    background: rgba(0,0,0, 0.41);
+    width: 100%;
+    color: white;
+    padding: 18px 80px;
+    font-size: 14px;
+    height: 56px;
+}
+
+.top-navbar-logo {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+
+.top-navbar-logo:hover {
+    color: #3cb878;
+    transition: 0.2s;
+}
+
+.top-navbar-right-side {
+    float: right;
+}
+
+.top-navbar-item {
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+a.green-link {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #3cb878;
+}
+
+a.green-link:hover {
+    /*text-decoration: underline;*/
+    border-bottom: 1px solid #3cb878;
+    transition: 0.1s ease-out;
+}
+
+.top-navbar-item.navbar-break:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1px;
+    color: transparent;
+    height: 19px;
+    box-sizing: border-box;
+    margin-right: 26px;
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+.calendar-icon,
+.forum-icon,
+.compass-icon  {
+    display: inline-block;
+    background: url('../img/icons.png') no-repeat;
+    overflow: hidden;
+    text-align: left;
+    margin-right: 26px;
+}
+
+.calendar-icon {
+    background-position: -20px -235px;
+    width: 19px;
+    height: 19px;
+}
+
+.calendar-icon:hover {
+    background-position: -20px -196px;
+    transition: 0.2s;
+}
+
+.forum-icon {
+    background-position: -20px -40px;
+    width: 28px;
+    height: 20px;
+}
+
+.forum-icon:hover {
+    background-position: -20px -0px;
+    transition: 0.2s;
+}
+
+.compass-icon {
+    background-position: -20px -156px;
+    width: 20px;
+    height: 20px;
+}
+
+.compass-icon:hover {
+    background-position: -20px -116px;
+    transition: 0.2s;
+}
+
+.landing {
+    height: calc(100vh - 56px);
+    width: 100%;
+    display: table;
+    text-align: center;
+}
+
+.landing-card-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.landing-card {
+    font-family: 'Verdana', sans-serif;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 29px 62px;
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    text-align: left;
+    font-size: 14px;
+}
+
+.landing-card:before {
+    content: '';
+    background-color: #3cb878;
+    position: absolute;
+    display: inline-block;
+    top: 29px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+}
+
+.land-card-top {
+    margin-bottom: 15px;
+}
+
+.land-card-title {
+    font-size: 16px;
+    color: #434343;
+    display: inline-block;
+}
+
+.land-card-top .green-link {
+    float: right;
+}
+
+.social-button {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 157px;
+    border-radius: 2px;
+    text-align: center;
+    color: white;
+    padding: 15px 0 15px 47px;
+    font-size: 16px;
+    margin-right: 8px;
+    text-decoration: none;
+    position: relative;
+    background-image: url("../img/icons.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.social-button:before {
+    content: '';
+    display: inline-block;
+    height: 19px;
+    position: absolute;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(0,0,0,0.2);
+    left: 47px;
+}
+
+.social-button.facebook {
+    background-color: #305db8;
+    background-position: 0 -291px;
+}
+
+.social-button.facebook:hover {
+    background-color: #264b96;
+    transition: 0.2s;
+}
+
+.social-button.google {
+    background-color: #df4a32;
+    background-position: -5px -64px;
+}
+
+.social-button.google:hover {
+    background-color: #c3412c;
+    transition: 0.2s;
+}
+
+.social-button:last-of-type {
+    margin-right: 0;
+}
+
+.land-card-break-line {
+    color: #848484;
+    font-size: 14px;
+    text-transform: lowercase;
+    text-align: center;
+    margin: 33px 0 18px;
+    position: relative;
+    background-color: white;
+}
+
+.land-card-break-line:before,
+.land-card-break-line:after {
+    content: '';
+    border-top: 1px solid #eaeaea;
+    position: absolute;
+    top: 8px;
+    width: 43%;
+}
+
+.land-card-break-line:before {
+    left: 0;
+}
+
+.land-card-break-line:after {
+    right: 0;
+}
+
+.registration-item.bordered-input {
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #eaeaea;
+    border-radius: 2px;
+    padding: 18px;
+    width: 100%;
+    margin-top: 9px;
+}
+
+.registration-item.bordered-input:focus {
+    border-color: transparent;
+    outline: none;
+    transition: 0.2s;
+    transform: translateY(-5px);
+    box-shadow: rgba(0,0,0,0.21) 0 3px 8px;
+}
+
+.registration-form label:first-of-type .registration-item {
+    margin-top: 0;
+}
+
+.registration-item.bordered-input::placeholder {
+    color: #bebebe;
+}
+
+/*checkbox customization*/
+
+.land-card-checkbox-wrapper {
+    display: block;
+    position: relative;
+    user-select: none;
+    margin: 22px 0 28px;
+}
+
+.land-card-checkbox-wrapper .checkbox {
+    position: absolute;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.land-card-checkbox-wrapper .green-checkbox {
+    box-sizing: border-box;
+    position: absolute;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 2px;
+}
+
+.land-card-checkbox-wrapper .checkbox:checked ~ .green-checkbox {
+    background: url("../img/checkbox-checked.svg") no-repeat;
+}
+
+.land-card-checkbox-wrapper .checkbox:active ~ .green-checkbox {
+    background: url("../img/checkbox-onclick.svg") no-repeat;
+    border: none;
+}
+
+.checkbox-span {
+    margin-left: 30px;
+    vertical-align: middle;
+}
+
+/*Green 'Create account' button in landing registration form*/
+
+.green-button {
+    box-sizing: border-box;
+    display: block;
+    padding: 17px 0;
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    background-color: #3cb878;
+}
+
+.green-button:hover {
+    background-color: #329a65;
+    transition: 0.2s;
+}
+
+/*clearfix for float elements*/
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+

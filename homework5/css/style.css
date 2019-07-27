@@ -1,0 +1,208 @@
+* {
+    font-family: 'Arimo', sans-serif;
+}
+
+.pricing-plan {
+    margin: 0 auto;
+    border: 22px solid #3a4965;
+}
+
+td {
+    font-size: 16px;
+    border-collapse: collapse;
+    background-color: #dddddd;
+    width: 270px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 22px 0;
+}
+
+.side-col {
+    width: 310px;
+}
+
+/*default cell backgrounds*/
+
+.table-top-corner {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.table-bottom-corner {
+    background-color: #dddddd;
+}
+
+thead td {
+    background-color: #fafafa;
+}
+
+tfoot td {
+    background-color: #f4f4f4;
+}
+
+/*lined-body style*/
+
+tbody tr:nth-of-type(odd) td {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-of-type(even) td {
+    background-color: #e3e3e3;
+}
+
+.bg-green {
+    background-color: #89c331;
+}
+
+.bg-coral {
+    background-color: #f04a56;
+}
+
+.bg-teal {
+    background-color: #20807c;
+}
+
+.bg-darkgray {
+    background-color: #484848;
+}
+
+.corner-title {
+    font-size: 18px;
+}
+
+.head-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.enlarged-title {
+    font-size: 30px;
+}
+
+
+/*price formatting*/
+
+.head-subtitle span {
+    font-size: 60px;
+    font-weight: 700;
+    position: relative;
+}
+
+/*variable currency pseudo elements*/
+
+.currency-usd:before {
+    content: '$';
+}
+
+.currency-eur:before {
+    content: '€';
+}
+
+.currency-gbp:before {
+    content: '£';
+}
+
+.head-subtitle span:after {
+    content: 'Per Month';
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.head-subtitle sup {
+    font-weight: 700;
+    font-size: 24px;
+    top: 10px;
+    position: absolute;
+}
+
+/*options of pricing plan */
+
+.side-title {
+    position: relative;
+    vertical-align: middle;
+}
+
+.storage-icon:before {
+    background: url("../img/icons.svg") no-repeat 0 -1px;
+}
+
+.cloud-icon:before {
+    background: url("../img/icons.svg") no-repeat 0 -38px;
+}
+
+.email-icon:before {
+    background: url("../img/icons.svg") no-repeat 0 -78px;
+}
+
+.support-icon:before {
+    background: url("../img/icons.svg") no-repeat 0 -115px;
+}
+
+.box-icon:before {
+    background: url("../img/icons.svg") no-repeat 0 -154px;
+}
+
+.users-icon:before {
+    background: url("../img/icons.svg") no-repeat 0 -192px;
+}
+
+.side-title:before {
+    box-sizing: border-box;
+    content: '';
+    vertical-align: middle;
+    display: inline-block;
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    margin-right: 12px;
+}
+
+/*default style for all buttons w/o background color*/
+
+.button {
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    width: 192px;
+    height: 49px;
+    padding: 18px 0;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    border-bottom: 7px;
+    transition: all 0.3s ease-out;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button:focus {
+    filter: brightness(0.8);
+}
+
+/*shadow line in buttons*/
+
+.button.bg-darkgray {
+    border-bottom: 7px solid #404040;
+}
+
+.button.bg-green {
+    border-bottom: 7px solid #79b027;
+}
+
+.button.bg-coral {
+    border-bottom: 7px solid #df3a46;
+}
+
+.button.bg-teal {
+    border-bottom: 7px solid #16736f;
+}
+
+

@@ -1,7 +1,7 @@
 # dan-it_hmwrks
 here is some of my homeworks
 
-https://dvesna.github.io/dan-it_hmwrks/homework3/index.html
+<a href="https://dvesna.github.io/dan-it_hmwrks/homework3/index.html">hw1</a>
 
 https://dvesna.github.io/dan-it_hmwrks/homework4/index.html
 

@@ -1,14 +1,14 @@
 # dan-it_hmwrks
 here is some of my homeworks
 
-<a href="https://dvesna.github.io/dan-it_hmwrks/homework3/index.html">hw1</a>
+<a href="https://dvesna.github.io/dan-it_hmwrks/homework3/index.html">Milan Holidays</a>
 
-https://dvesna.github.io/dan-it_hmwrks/homework4/index.html
+<a href="https://dvesna.github.io/dan-it_hmwrks/homework4/index.html">registration page</a>
 
-https://dvesna.github.io/dan-it_hmwrks/homework5/index.html
+<a href="https://dvesna.github.io/dan-it_hmwrks/homework5/index.html">tables - 1</a>
 
-https://dvesna.github.io/dan-it_hmwrks/homework5_additional_task/index.html
+<a href="https://dvesna.github.io/dan-it_hmwrks/homework5_additional_task/index.html">tables - 2</a>
 
-https://dvesna.github.io/dan-it_hmwrks/homework6/index.html
+<a href="https://dvesna.github.io/dan-it_hmwrks/homework6/index.html">Design architect</a>
 
-https://dvesna.github.io/dan-it_hmwrks/homework7/index.html
+<a href="https://dvesna.github.io/dan-it_hmwrks/homework7/index.html">Star Wars</a>

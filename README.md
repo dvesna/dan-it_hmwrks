@@ -12,4 +12,7 @@ here is some of my homeworks
 <a href="https://dvesna.github.io/dan-it_hmwrks/homework6/index.html">Design architect</a>
 
 <a href="https://dvesna.github.io/dan-it_hmwrks/homework7/index.html">Star Wars</a>
+----------------------
+<a href="https://dvesna.github.io/dan-it_hmwrks/step-project-ham/index.html">THE STEP PROJECT</a>
+----------------------
 

@@ -19,6 +19,7 @@ a {
     background-size: cover;
     height: 1012px;
     min-width: 1160px;
+    display: flex;
 }
 
 .top-navbar {
@@ -27,6 +28,7 @@ a {
     width: 100%;
     position: fixed;
     z-index: 2;
+    align-self: flex-start;
 }
 
 .top-navbar .container {
@@ -268,6 +270,9 @@ a {
     flex-basis: calc((100% / 6) * 5);
     line-height: 1.6;
     font-size: 14px;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
     text-align: justify;
     color: #777777;
 }
@@ -459,6 +464,10 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+span.logo-case {
+    text-transform: none;
 }
 
 .reviews-slider {

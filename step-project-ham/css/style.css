@@ -472,6 +472,7 @@ span.logo-case {
 
 .reviews-slider {
     max-width: 1141px;
+    margin: 0 auto;
 }
 
 .review-item-text {

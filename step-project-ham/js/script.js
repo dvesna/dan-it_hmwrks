@@ -23,6 +23,7 @@ servicesTabsContainer.addEventListener('click', (event) => {
 });
 
 // portfolio-organizer
+// portfolio-organizer
 
 const customGallery2 = {
     folderName: 'portfolio',
@@ -69,28 +70,54 @@ const customGallery2 = {
 const portfolioGalleryContainer = document.getElementById('portfolio');
 const portfolioGalleryTabs = document.getElementById('portfolio-tabs');
 const portfolioLoadBtn = document.querySelector('[data-btn="portfolio-extra-loader"]');
+
 let defaultPicturesQuantity = 11;
 
 function createGallery(obj, fileName) {
     fileName.forEach((item, itemIndex) => {
+        const newPortfolioItem = document.createElement('div');
+        const portfolioItemOptions = document.createElement('div');
+        const optionsLink = document.createElement('button');
+        const optionsZoom = document.createElement('button');
+        const optionsTitle = document.createElement('p');
+        const optionsSubtitle = document.createElement('p');
         const newImg = document.createElement('img');
-        portfolioGalleryContainer.appendChild(newImg);
-        newImg.classList.add(obj.className);
+
+        newPortfolioItem.classList.add(obj.className);
+        portfolioItemOptions.classList.add('portfolio-item-options');
+        optionsLink.classList.add('portfolio-options-btn-link');
+        optionsZoom.classList.add('portfolio-options-btn-zoom');
+        optionsTitle.classList.add('portfolio-options-title');
+        optionsSubtitle.classList.add('portfolio-options-subtitle');
+
+        portfolioItemOptions.append(optionsLink, optionsZoom, optionsTitle, optionsSubtitle);
+
+        newPortfolioItem.append(newImg, portfolioItemOptions);
+        portfolioGalleryContainer.appendChild(newPortfolioItem);
+
         newImg.setAttribute('src', `img/${obj.folderName}/${item}`)
         if (item.startsWith('graphic-design')) {
-            newImg.dataset.imgType = `portfolio-graphic-design`;
+            newPortfolioItem.dataset.imgType = `portfolio-graphic-design`;
+            optionsTitle.innerText = 'creative design';
+            optionsSubtitle.innerText = 'Graphic Design';
         }
         if (item.startsWith('landing-page')) {
-            newImg.dataset.imgType = `portfolio-landing-pages`;
+            newPortfolioItem.dataset.imgType = `portfolio-landing-pages`;
+            optionsTitle.innerText = 'creative design';
+            optionsSubtitle.innerText = 'Landing Pages';
         }
         if (item.startsWith('web-design')) {
-            newImg.dataset.imgType = `portfolio-web-design`;
+            newPortfolioItem.dataset.imgType = `portfolio-web-design`;
+            optionsTitle.innerText = 'creative design';
+            optionsSubtitle.innerText = 'Web Design';
         }
         if (item.startsWith('wordpress')) {
-            newImg.dataset.imgType = `portfolio-wordpress`;
+            newPortfolioItem.dataset.imgType = `portfolio-wordpress`;
+            optionsTitle.innerText = 'creative design';
+            optionsSubtitle.innerText = 'Wordpress';
         }
         if (itemIndex > defaultPicturesQuantity) {
-            newImg.hidden = true;
+            newPortfolioItem.hidden = true;
         }
     });
 
@@ -98,6 +125,7 @@ function createGallery(obj, fileName) {
     const portfolioItems = [...document.querySelectorAll('.portfolio-item')];
 
     portfolioGalleryTabs.addEventListener('click', (event) => {
+        event.preventDefault();
         event.target.classList.add('selected-item');
         tabs.forEach((item) => {
             if (item !== event.target) {
@@ -112,6 +140,7 @@ function createGallery(obj, fileName) {
             }
         })
     });
+
     portfolioLoadBtn.addEventListener('click', (event) => {
         defaultPicturesQuantity += 12;
         portfolioItems.forEach((item, index) => {

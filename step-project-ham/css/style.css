@@ -367,12 +367,79 @@ a {
 .portfolio-item {
     flex-basis: 25%;
     height: 206px;
+    position: relative;
+
+}
+
+.portfolio-item-options {
+    background-color: #f8fcfe;
+    border-top: 3px solid #18CFAB;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    padding: 46px 0 50px;
 }
 
 .portfolio-item img {
     width: 100%;
     height: 100%;
 }
+
+.portfolio-item:hover .portfolio-item-options {
+    display: block;
+    bottom: 0;
+}
+
+.portfolio-options-btn-link, .portfolio-options-btn-zoom {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #18CFAB no-repeat center;
+    border: 1px solid #18CFAB;
+}
+
+.portfolio-options-btn-link:focus, .portfolio-options-btn-zoom:focus {
+    outline: none;
+}
+
+.portfolio-options-btn-link {
+    background-image: url("../img/icons/link_white.svg");
+    background-size: 15px 15px;
+    margin-right: 5px;
+}
+.portfolio-options-btn-link:hover {
+    background-image: url("../img/icons/link_green.svg");
+    background-color: #f8fcfe;
+}
+
+.portfolio-options-btn-zoom {
+    background-image: url("../img/icons/search-solid-white.svg");
+    background-size: 15px 15px;
+}
+
+.portfolio-options-btn-zoom:hover {
+    background-image: url("../img/icons/search-solid-green.svg");
+    background-color: #f8fcfe;
+}
+
+.portfolio-options-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #18CFAB;
+    margin: 34px auto 13px;
+}
+
+.portfolio-options-subtitle {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #8a8a8a;
+}
+
+
+/*news section*/
 
 .news {
     min-width: 1160px;
@@ -586,7 +653,7 @@ span.logo-case {
     transform: translateY(-11px);
 }
 
-.review-navbar .slick-current .user-reviewer img  {
+.review-navbar .slick-current .user-reviewer img {
     border: 2px solid #18CFAB;
 }
 
@@ -672,8 +739,6 @@ span.logo-case {
 .review-navbar .slick-slide {
     margin-left: 78px;
 }
-
-
 
 
 /*section with title 'Gallery Of Best Images' */

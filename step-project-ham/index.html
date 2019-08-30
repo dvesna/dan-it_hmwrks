@@ -3,8 +3,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/icons/main-icon.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>theHam | JUST BUY AND ENJOY</title>
 </head>
 <body>
@@ -25,8 +30,8 @@
                 <a href="#" class="top-navbar-menu-item">blog</a>
                 <a href="#" class="top-navbar-menu-item">team</a>
                 <a href="#" class="top-navbar-menu-item">contact</a>
-                <a href="#" class="top-navbar-menu-item search-item">
-                    <!--                    <div class="search-item"></div>-->
+                <a href="#" class="top-navbar-menu-item">
+                    <span class="search-item"></span>
                 </a>
             </nav>
         </div>
@@ -104,19 +109,120 @@
         <h2 class="section-title">Our Services</h2>
         <div class="dropdown-slider">
             <nav class="dropdown-navbar">
-                <a href="#" class="dropdown-navbar-item selected-item">Web Design</a>
-                <a href="#" class="dropdown-navbar-item">Graphic Design</a>
-                <a href="#" class="dropdown-navbar-item">Online Support</a>
-                <a href="#" class="dropdown-navbar-item">App Design</a>
-                <a href="#" class="dropdown-navbar-item">Online Marketing</a>
-                <a href="#" class="dropdown-navbar-item">Seo Service</a>
+                <span class="dropdown-navbar-item selected-item">Web Design</span>
+                <span class="dropdown-navbar-item">Graphic Design</span>
+                <span class="dropdown-navbar-item">Online Support</span>
+                <span class="dropdown-navbar-item">App Design</span>
+                <span class="dropdown-navbar-item">Online Marketing</span>
+                <span class="dropdown-navbar-item">Seo Service</span>
             </nav>
-            <div class="dropdown-item-wrapper">
-                <div class="dropdown-item-image-wrapper">
-                    <img src="img/services/servicer_article_img.png" alt="">
-                </div>
-                <p class="dropdown-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+            <ul class="tabs-content" id="tabs-content">
+                <li>
+                    <div class="dropdown-item">
+                        <div class="dropdown-item-image-wrapper">
+                            <img src="img/services/servicer_article_img.png" alt="">
+                        </div>
+                        <p class="dropdown-item-text">Web design encompasses many different skills and disciplines in
+                            the production and maintenance of websites. The different areas of web design include web
+                            graphic design; interface design; authoring, including standardised code and proprietary
+                            software; user experience design; and search engine optimization. Often many individuals
+                            will work in teams covering different aspects of the design process, although some designers
+                            will cover them all.[1] The term web design is normally used to describe the design process
+                            relating to the front-end (client side) design of a website including writing markup. Web
+                            design partially overlaps web engineering in the broader scope of web development. Web
+                            designers are expected to have an awareness of usability and if their role involves creating
+                            markup then they are also expected to be up to date with web accessibility guidelines.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown-item">
+                        <div class="dropdown-item-image-wrapper">
+                            <img src="img/services/web-design7.jpg" alt="">
+                        </div>
+                        <p class="dropdown-item-text">Graphic design is the process of visual communication and
+                            problem-solving through the use of typography, photography, and illustration. The field is
+                            considered a subset of visual communication and communication design, but sometimes the term
+                            "graphic design" is used synonymously. Graphic designers create and combine symbols, images
+                            and text to form visual representations of ideas and messages. They use typography, visual
+                            arts, and page layout techniques to create visual compositions. Common uses of graphic
+                            design include corporate design (logos and branding), editorial design (magazines,
+                            newspapers and books), wayfinding or environmental design, advertising, web design,
+                            communication design, product packaging, and signage.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown-item">
+                        <div class="dropdown-item-image-wrapper">
+                            <img src="img/services/wordpress5.jpg" alt="">
+                        </div>
+                        <p class="dropdown-item-text">Online chat may refer to any kind of communication over the
+                            Internet that offers a real-time transmission of text messages from sender to receiver. Chat
+                            messages are generally short in order to enable other participants to respond quickly.
+                            Thereby, a feeling similar to a spoken conversation is created, which distinguishes chatting
+                            from other text-based online communication forms such as Internet forums and email. Online
+                            chat may address point-to-point communications as well as multicast communications from one
+                            sender to many receivers and voice and video chat, or may be a feature of a web conferencing
+                            service.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown-item">
+                        <div class="dropdown-item-image-wrapper">
+                            <img src="img/services/landing-page7.jpg" alt="">
+                        </div>
+                        <p class="dropdown-item-text">Mobile app development is the act or process by which a mobile app
+                            is developed for mobile devices, such as personal digital assistants, enterprise digital
+                            assistants or mobile phones. These applications can be pre-installed on phones during
+                            manufacturing platforms, or delivered as web applications using server-side or client-side
+                            processing (e.g., JavaScript) to provide an "application-like" experience within a Web
+                            browser. Application software developers also must consider a long array of screen sizes,
+                            hardware specifications, and configurations because of intense competition in mobile
+                            software and changes within each of the platforms. Mobile app development has been steadily
+                            growing, in revenues and jobs created. A 2013 analyst report estimates there are 529,000
+                            direct app economy jobs within the EU 28 members, 60% of which are mobile app
+                            developers.[1]</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown-item">
+                        <div class="dropdown-item-image-wrapper">
+                            <img src="img/services/news_img08.png" alt="">
+                        </div>
+                        <p class="dropdown-item-text">Online advertising, also called online marketing or Internet
+                            advertising or web advertising, is a form of marketing and advertising which uses the
+                            Internet to deliver promotional marketing messages to consumers. Many consumers find online
+                            advertising disruptive[1] and have increasingly turned to ad blocking for a variety of
+                            reasons. When software is used to do the purchasing, it is known as programmatic
+                            advertising. Online advertising includes email marketing, search engine marketing (SEM),
+                            social media marketing, many types of display advertising (including web banner
+                            advertising), and mobile advertising. Like other advertising media, online advertising
+                            frequently involves a publisher, who integrates advertisements into its online content, and
+                            an advertiser, who provides the advertisements to be displayed on the publisher's content.
+                            Other potential participants include advertising agencies who help generate and place the ad
+                            copy, an ad server which technologically delivers the ad and tracks statistics, and
+                            advertising affiliates who do independent promotional work for the advertiser.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown-item">
+                        <div class="dropdown-item-image-wrapper">
+                            <img src="img/services/wordpress2.jpg" alt="">
+                        </div>
+                        <p class="dropdown-item-text">Search engine optimization (SEO) is the process of increasing the
+                            quality and quantity of website traffic by increasing the visibility of a website or a web
+                            page to users of a web search engine.[1] SEO refers to the improvement of unpaid results
+                            (known as "natural" or "organic" results), and excludes direct traffic/visitors and the
+                            purchase of paid placement. Primarily SEO pertains to search engine. SEO may target
+                            different kinds of search, including image search, video search, academic search,[2] news
+                            search, and industry-specific vertical search engines. Optimizing a website may involve
+                            editing its content, adding content, modifying HTML, and associated coding to both increase
+                            its relevance to specific keywords and to remove barriers to the indexing activities of
+                            search engines.[citation needed] Promoting a site to increase the number of backlinks, or
+                            inbound links, is another SEO tactic. By May 2015, mobile search had surpassed desktop
+                            search.[3]</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
@@ -134,78 +240,16 @@
 <section class="portfolio">
     <div class="container">
         <h2 class="section-title">Our Amazing Work</h2>
-        <nav class="portfolio-navbar">
-            <a href="#" class="portfolio-navbar-item selected-item">All</a>
-            <a href="#" class="portfolio-navbar-item">Graphic Design</a>
-            <a href="#" class="portfolio-navbar-item">Web Design</a>
-            <a href="#" class="portfolio-navbar-item">Landing Pages</a>
-            <a href="#" class="portfolio-navbar-item">Wordpress</a>
-        </nav>
-        <div class="portfolio-wrapper">
-            <div class="portfolio-preview-container">
-                <a href="#" class="portfolio-item">
-                    <div class="portfolio-item-wrapper">
-                        <img src="img/portfolio/graphic-design1.jpg" alt="">
-                    </div>
-                </a>
-                <a href="#" class="portfolio-item">
-                    <div class="portfolio-item-wrapper">
-                        <img src="img/portfolio/graphic-design2.jpg" alt="">
-                    </div>
-                </a>
-                <a href="#" class="portfolio-item">
-                    <div class="portfolio-item-wrapper">
-                        <img src="img/portfolio/graphic-design3.jpg" alt="">
-                    </div>
-                </a>
-                <a href="#" class="portfolio-item">
-                    <div class="portfolio-item-wrapper">
-                        <img src="img/portfolio/graphic-design4.jpg" alt="">
-                    </div>
-                </a>
-                <a href="#" class="portfolio-item">
-                    <div class="portfolio-item-wrapper">
-                        <img src="img/portfolio/graphic-design5.jpg" alt="">
-                    </div>
-                </a>
-                <a href="#" class="portfolio-item">
-                    <div class="portfolio-item-wrapper">
-                        <img src="img/portfolio/graphic-design6.jpg" alt="">
-                    </div>
-                </a>
-                <a href="#" class="portfolio-item">
-                    <div class="portfolio-item-wrapper">
-                        <img src="img/portfolio/graphic-design7.jpg" alt="">
-                    </div>
-                </a>
-                <a href="#" class="portfolio-item">
-                    <div class="portfolio-item-wrapper">
-                        <img src="img/portfolio/graphic-design8.jpg" alt="">
-                    </div>
-                </a>
-                <a href="#" class="portfolio-item">
-                    <div class="portfolio-item-wrapper">
-                        <img src="img/portfolio/graphic-design9.jpg" alt="">
-                    </div>
-                </a>
-                <a href="#" class="portfolio-item">
-                    <div class="portfolio-item-wrapper">
-                        <img src="img/portfolio/graphic-design10.jpg" alt="">
-                    </div>
-                </a>
-                <a href="#" class="portfolio-item">
-                    <div class="portfolio-item-wrapper">
-                        <img src="img/portfolio/graphic-design11.jpg" alt="">
-                    </div>
-                </a>
-                <a href="#" class="portfolio-item">
-                    <div class="portfolio-item-wrapper">
-                        <img src="img/portfolio/graphic-design12.jpg" alt="">
-                    </div>
-                </a>
-            </div>
+        <ul class="portfolio-navbar" id="portfolio-tabs">
+            <li data-img-type="portfolio" class="portfolio-navbar-item selected-item">All</li>
+            <li data-img-type="portfolio-graphic-design" class="portfolio-navbar-item">Graphic Design</li>
+            <li data-img-type="portfolio-web-design" class="portfolio-navbar-item">Web Design</li>
+            <li data-img-type="portfolio-landing-pages" class="portfolio-navbar-item">Landing Pages</li>
+            <li data-img-type="portfolio-wordpress" class="portfolio-navbar-item">Wordpress</li>
+        </ul>
+        <div class="portfolio-preview-container" id="portfolio">
         </div>
-        <a href="#" class="fake-button bg-mint extra-loader">Load More</a>
+        <span class="fake-button bg-mint extra-loader" data-btn="portfolio-extra-loader">Load More</span>
     </div>
 </section>
 <section class="news">
@@ -347,38 +391,112 @@
     <div class="container">
         <h2 class="section-title txt-white">What People Say About <span class="logo-case">theHam</span></h2>
         <div class="reviews-slider">
-            <div class="review-item">
-                <header class="review-item-text">
-                    <p>Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis
-                        massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet
-                        sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
-                </header>
-                <section class="review-user-wrapper">
-                    <p class="review-user-name txt-mint">Hasan Ali</p>
-                    <p class="review-user-job">UX Designer</p>
-                    <img src="img/review/user3.png" alt="" class="review-item-userpic">
-                </section>
+            <div class="review-items-wrapper slider-for">
+                <div class="review-item">
+                    <header class="review-item-text">
+                        <p>“Good design is like a refrigerator—when it works, no one notices, but when it doesn’t, it
+                            sure stinks.” –Irene Au</p>
+                    </header>
+                    <section class="review-user-wrapper">
+                        <p class="review-user-name txt-mint">Damian Jolley</p>
+                        <p class="review-user-job">UI Designer</p>
+                        <img src="img/review/Damian_Jolley_UI_Designer.png" alt="" class="review-item-userpic">
+                    </section>
+                </div>
+                <div class="review-item">
+                    <header class="review-item-text">
+                        <p>“To design is much more than simply to assemble, to order, or even to edit: it is to add
+                            value and meaning, to illuminate, to simplify, to clarify, to modify, to dignify, to
+                            dramatize, to persuade, and perhaps even to amuse. To design is to transform prose into
+                            poetry.” – Paul Rand</p>
+                    </header>
+                    <section class="review-user-wrapper">
+                        <p class="review-user-name txt-mint">Maryna Smit</p>
+                        <p class="review-user-job">UX Practitioner, Sage</p>
+                        <img src="img/review/Maryna_Smit_UX_Practitioner_Sage.jpg" alt="" class="review-item-userpic">
+                    </section>
+                </div>
+                <div class="review-item">
+                    <header class="review-item-text">
+                        <p>Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi
+                            quis
+                            massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet
+                            sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
+                    </header>
+                    <section class="review-user-wrapper">
+                        <p class="review-user-name txt-mint">Hasan Ali</p>
+                        <p class="review-user-job">UX Designer</p>
+                        <img src="img/review/user3.png" alt="" class="review-item-userpic">
+                    </section>
+                </div>
+                <div class="review-item">
+                    <header class="review-item-text">
+                        <p>“The goal of a designer is to listen, observe, understand, sympathize, empathize, synthesize,
+                            and glean insights that enable him or her to ‘make the invisible visible.’ – Hillman
+                            Curtis</p>
+                    </header>
+                    <section class="review-user-wrapper">
+                        <p class="review-user-name txt-mint">Sarah Doody</p>
+                        <p class="review-user-job">UX Designer and Founder of The UX Notebook</p>
+                        <img src="img/review/Sarah_Doody_UX_Designer_and_Founder.jpg" alt=""
+                             class="review-item-userpic">
+                    </section>
+                </div>
+                <div class="review-item">
+                    <header class="review-item-text">
+                        <p>“It’s through mistakes that you actually can grow. You have to get bad in order to get good.”
+                            – Paula Scher</p>
+                    </header>
+                    <section class="review-user-wrapper">
+                        <p class="review-user-name txt-mint">Tanner Garbutt</p>
+                        <p class="review-user-job">Agency Project Manager at Web.com</p>
+                        <img src="img/review/Tanner_Garbutt.jpg" alt="" class="review-item-userpic">
+                    </section>
+                </div>
+                <div class="review-item">
+                    <header class="review-item-text">
+                        <p>“The alternative to good design is always bad design. There is no such thing as no design.” –
+                            Adam Judge</p>
+                    </header>
+                    <section class="review-user-wrapper">
+                        <p class="review-user-name txt-mint">Matheus Menezes</p>
+                        <p class="review-user-job">Product Designer at Clubinvest</p>
+                        <img src="img/review/Matheus_Menezes_Product_Designer.jpg" alt="" class="review-item-userpic">
+                    </section>
+                </div>
             </div>
-            <nav class="review-navbar">
-                <a href="#" class="review-navbar-item review-navbar-button">
-                    <div class="review-navbar-arrow navigation-left"></div>
-                </a>
-                <a href="#" class="review-navbar-item user-reviewer">
-                    <img src="img/review/user1.png" alt="">
-                </a>
-                <a href="#" class="review-navbar-item user-reviewer">
-                    <img src="img/review/user2.png" alt="">
-                </a>
-                <a href="#" class="review-navbar-item user-reviewer selected-item">
-                    <img src="img/review/user3.png" alt="">
-                </a>
-                <a href="#" class="review-navbar-item user-reviewer">
-                    <img src="img/review/user4.png" alt="">
-                </a>
-                <a href="#" class="review-navbar-item review-navbar-button">
-                    <div class="review-navbar-arrow navigation-right"></div>
-                </a>
-            </nav>
+            <div class="review-navbar slider-nav">
+                <div>
+                    <div class="review-navbar-item user-reviewer">
+                        <img src="img/review/Damian_Jolley_UI_Designer.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="review-navbar-item user-reviewer">
+                        <img src="img/review/Maryna_Smit_UX_Practitioner_Sage.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="review-navbar-item user-reviewer">
+                        <img src="img/review/user3.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="review-navbar-item user-reviewer">
+                        <img src="img/review/Sarah_Doody_UX_Designer_and_Founder.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="review-navbar-item user-reviewer">
+                        <img src="img/review/Tanner_Garbutt.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="review-navbar-item user-reviewer">
+                        <img src="img/review/Matheus_Menezes_Product_Designer.jpg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -387,34 +505,22 @@
         <h2 class="section-title">Gallery of best images</h2>
         <div class="gallery-wrapper">
             <a href="#" class="gallery-item">
-                <div class="gallery-item-container">
-                    <img src="img/gallery/glr_img01.png" alt="">
-                </div>
+                <img src="img/gallery/glr_img01.png" alt="">
             </a>
             <a href="#" class="gallery-item">
-                <div class="gallery-item-container">
-                    <img src="img/gallery/glr_img02.png" alt="">
-                </div>
+                <img src="img/gallery/glr_img02.png" alt="">
             </a>
             <a href="#" class="gallery-item">
-                <div class="gallery-item-container">
-                    <img src="img/gallery/glr_img03.png" alt="">
-                </div>
+                <img src="img/gallery/glr_img03.png" alt="">
             </a>
             <a href="#" class="gallery-item">
-                <div class="gallery-item-container">
-                    <img src="img/gallery/glr_img04.png" alt="">
-                </div>
+                <img src="img/gallery/glr_img04.png" alt="">
             </a>
             <a href="#" class="gallery-item">
-                <div class="gallery-item-container">
-                    <img src="img/gallery/glr_img05.png" alt="">
-                </div>
+                <img src="img/gallery/glr_img05.png" alt="">
             </a>
             <a href="#" class="gallery-item">
-                <div class="gallery-item-container">
-                    <img src="img/gallery/glr_img06.png" alt="">
-                </div>
+                <img src="img/gallery/glr_img06.png" alt="">
             </a>
             <!--mini gallery inside of main gallery layout-->
             <div class="gallery-item">
@@ -455,9 +561,7 @@
                 </div>
             </div>
             <a href="#" class="gallery-item">
-                <div class="gallery-item-container">
-                    <img src="img/gallery/glr_img08.png" alt="">
-                </div>
+                <img src="img/gallery/glr_img08.png" alt="">
             </a>
         </div>
         <a href="#" class="fake-button bg-mint extra-loader">Load More</a>
@@ -469,9 +573,10 @@
                 class="txt-mint">theHam</span> | All Rights Reserved</span>
     </div>
 </footer>
-
-<!--here is the end of html layout-->
-
-<!--<script src="js/script.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/script.js"></script>
+<!--<script src="js/script2.js"></script>-->
 </body>
 </html>
